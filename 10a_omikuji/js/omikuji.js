@@ -40,6 +40,10 @@ let soundEndflag = "0"; //sound control
 const btn1 = document.getElementById("btn1");
 const omikujiText = document.getElementById("omikujiText");
 
+btn1.addEventListener("click", function() {
+  console.log("クリックしたよ！");
+});
+
 btn1.addEventListener("click",
     function () {
         //sound control
