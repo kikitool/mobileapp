@@ -26,7 +26,7 @@ body {
         Meiryo,
         sans-serif;
     text-align: center;
-    background-image: url(../img/background.JPG);
+    background-image: url(../img/background.jpg);
     background-size: cover;
     overflow: hidden;
 }
@@ -200,4 +200,5 @@ footer>p {
         background-size: auto 1000px;
     }
 }
+
 
