@@ -151,6 +151,7 @@ a:hover {
     margin: 0;
     line-height: 1em;
     overflow: hidden;
+    opacity: 0;
 }
 
 .item02 {
@@ -160,6 +161,7 @@ a:hover {
     margin: 0;
     line-height: 1em;
     overflow: hidden;
+    opacity: 0;
 }
 
 .item01 img,
@@ -201,3 +203,4 @@ footer>p {
         background-size: auto 1000px;
     }
 }
+
