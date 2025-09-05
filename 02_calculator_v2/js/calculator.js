@@ -48,5 +48,6 @@ function calculate(num1, num2, calcType) {
 
 /* 計算結果をクリックします。*/
 function clear() {
-    elementResult.innerHTML = "result"; // 結果をクリア
+    elementResult.innerHTML = ""; // 結果をクリア
 }
+
