@@ -50,6 +50,19 @@ elementDiv.addEventListener("click", function () { update("/") });
 elementEqual.addEventListener("click", dspResult);
 elementCancel.addEventListener("click", clear);
 
+//add-str  keyboardからの入力
+document.addEventListener("keydown", keydownEvent, false);
+
+//keydownイベント実行時の処理
+function keydownEvent(event) {
+  if (event.key >= "0" && event.key <= "9") edit(event.key)
+  if (event.key === "+" || event.key === "-" || event.key === "*" || event.key === "/") update(event.key);
+  if (event.key === "=" || event.key === "Enter") dspResult();
+  if (event.key === "c" || event.key === "C" || event.key === "Escape" || event.key === "Backspace" || event.key === "Delete") clear();
+}
+
+//add-end keyboardからの入力
+
 /** 数字がクリックされたときの処理 */
 function edit(wkInput) {
   // １つ前の入力が数値
@@ -131,4 +144,5 @@ function calculator() {
       break;
   }
   elementResult.innerHTML = wkTotal;
+
 }
