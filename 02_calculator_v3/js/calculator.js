@@ -63,6 +63,33 @@ function keydownEvent(event) {
 
 //add-end keyboardからの入力
 
+/* 
+
+//基本なコード
+//keydownイベント実行するときの処理
+function keydownEvent(event) {
+  if (event.key === "1") edit(1);
+  if (event.key === "2") edit(2);
+  if (event.key === "3") edit(3);
+  if (event.key === "4") edit(4);
+  if (event.key === "5") edit(5);
+  if (event.key === "6") edit(6);
+  if (event.key === "7") edit(7);
+  if (event.key === "8") edit(8);
+  if (event.key === "9") edit(9);
+  if (event.key === "0") edit(0);
+  if (event.key === "+") update("+");
+  if (event.key === "-") update("-");
+  if (event.key === "*") update("*");
+  if (event.key === "/") update("/");
+  if (event.key === "=" || event.key === "Enter") dspResult();
+  if (event.key === "c" || event.key === "C" || event.key === "Escape" || event.key === "Backspace" || event.key === "Delete") clear();
+}
+
+//add-end keyboardからの入力
+
+*/
+
 /** 数字がクリックされたときの処理 */
 function edit(wkInput) {
   // １つ前の入力が数値
@@ -146,3 +173,4 @@ function calculator() {
   elementResult.innerHTML = wkTotal;
 
 }
+
