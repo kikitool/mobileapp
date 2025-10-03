@@ -90,6 +90,19 @@ function keydownEvent(event) {
 
 */
 
+/*
+
+//すっきりしたコード keydownイベント実行するときの処理
+function keydownEvent(event) {
+  if(["0","1","2","3","4","5","6","7","8","9"].includes(event.key)) edit(event.key)
+  if(["+","-","*","/"].includes(event.key)) update(event.key);
+  if(["=","Enter"].includes(event.key)) dspResult();
+  if(["c","C","Escape","Backspace","Delete"].includes(event.key)) clear();
+}
+// add-end keyboardからの入力
+
+*/
+
 /** 数字がクリックされたときの処理 */
 function edit(wkInput) {
   // １つ前の入力が数値
@@ -173,4 +186,5 @@ function calculator() {
   elementResult.innerHTML = wkTotal;
 
 }
+
 
