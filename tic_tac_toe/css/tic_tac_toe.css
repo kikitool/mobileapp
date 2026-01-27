@@ -19,9 +19,9 @@ body {
         "Hiragino Sans",
         Meiryo,
         sans-serif;
-    //background: rgb(233, 168, 227);
-    background-image: url(../img/background.jpg);
-    background-size: contain;
+    background: rgb(233, 168, 227);
+    //background-image: url(../img/background.jpg);
+    //background-size: contain;
     overflow: hidden;
 }
 
@@ -198,3 +198,4 @@ footer>p {
     }
 
 }
+
