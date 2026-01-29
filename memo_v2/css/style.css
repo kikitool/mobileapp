@@ -1,0 +1,267 @@
+@charset "utf-8";
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  line-height: 1.5;
+  font-size: 1.6rem;
+  font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+  text-align: center;
+  background: linear-gradient(135deg, #F5E6D3 0%, #E8F5E9 50%, #FFF9E6 100%);
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+}
+
+header, main, footer, h1, h2, h3, p, div, table, .field, .btn-area, .filler01 {
+  margin: 0.5em 0em 0em 0em;
+  padding: 0.1em;
+}
+
+th, td {
+  line-height: 1.2em;
+  padding: 0.1em;
+}
+
+/* 见出し */
+h1 {
+  color: #27AE60;
+  font-size: 2.5em;
+  margin-bottom: 0.3em;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  color: #52B788;
+  font-weight: 600;
+  font-size: 1.2em;
+}
+
+/* メイン */
+.field01 {
+  position: relative;
+  height: 5em;
+}
+
+.field02 {
+  position: relative;
+  height: 10em;
+}
+
+label {
+  position: absolute;
+  left: 0.5em;
+  color: #333;
+  font-weight: 600;
+  font-size: 1.1em;
+}
+
+label::after {
+  margin-left: 1.0em;
+  padding: 0px 6px 0px 6px;
+  border-radius: 4px;
+  font-size: 0.6em;
+  color: white;
+  background-color: #E74C3C;
+  content: "必須";
+}
+
+textarea {
+  position: absolute;
+  top: 2em;
+  left: 3em;
+  width: 70%;
+  padding: 0.5em;
+  border: 2px solid #52B788;
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 1em;
+  resize: vertical;
+  background: rgba(255, 255, 255, 0.9);
+}
+
+textarea:focus {
+  outline: none;
+  border-color: #27AE60;
+  box-shadow: 0 0 8px rgba(39, 174, 96, 0.3);
+}
+
+textarea::placeholder {
+  color: #999;
+}
+
+.btn-area {
+  margin-left: 3em;
+  text-align: left;
+  margin-top: 1em;
+}
+
+#save, #select, #del, #allClear {
+  padding: 0.7em 1.5em;
+  margin: 0.3em;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  font-size: 1em;
+  background: #27AE60;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#save:hover, #select:hover {
+  background: #229954;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(39, 174, 96, 0.3);
+}
+
+#del, #allClear {
+  background: #999;
+  color: white;
+}
+
+#del:hover, #allClear:hover {
+  background: #777;
+}
+
+/* テーブル */
+table {
+  table-layout: fixed;
+  width: 80%;
+  margin-left: 3em;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(39, 174, 96, 0.2);
+  border: 3px solid #52B788;
+}
+
+table th {
+  background: linear-gradient(135deg, #52B788 0%, #27AE60 100%);
+  color: white;
+  font-weight: 600;
+}
+
+table th, table td {
+  padding: 0.8em 0.5em;
+  border: 1px solid #D5F4E6;
+  text-align: center;
+}
+
+table tr {
+  background: white;
+}
+
+table tr:hover {
+  background: #F0FFF4;
+}
+
+table tr:nth-child(even) {
+  background: #F8FFF8;
+}
+
+.width5 {
+  width: 5%;
+}
+
+.width10 {
+  width: 10%;
+}
+
+.width30 {
+  width: 30%;
+}
+
+.width45 {
+  width: 45%;
+}
+
+.favorite-btn {
+  background: none;
+  border: none;
+  font-size: 1.5em;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.favorite-btn:hover {
+  transform: scale(1.2);
+}
+
+.favorite-btn.active {
+  color: #E74C3C;
+  text-shadow: 0 0 5px rgba(231, 76, 60, 0.5);
+}
+
+.trash::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2px;
+  height: 2px;
+  margin: 0;
+  content: '🗑';
+  background-size: contain;
+}
+
+/* レスポンシブ対応 */
+@media screen and (max-width: 480px) {
+  label {
+    left: 0.1em;
+  }
+
+  textarea {
+    left: 0.1em;
+    width: 90%;
+  }
+
+  .btn-area {
+    margin-left: 0.1em;
+  }
+
+  table {
+    width: 100%;
+    margin-left: 0.1em;
+  }
+}
+
+/* Back button */
+.back {
+  text-align: left;
+  padding: 1em;
+}
+
+#btn99 {
+  padding: 0.7em 1.5em;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  font-size: 1.1em;
+  background: #27AE60;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#btn99:hover {
+  background: #229954;
+  transform: translateX(-2px);
+}
+
+/* SweetAlert */
+.swal2-title, .swal2-content {
+  color: #333 !important;
+  font-weight: bold !important;
+}
+
+/* Decorative elements */
+.plant-decoration {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  font-size: 8em;
+  opacity: 0.1;
+  pointer-events: none;
+}
